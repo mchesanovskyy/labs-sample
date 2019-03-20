@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Labs">
+      <UniqueIdentifier>{ce5657bf-bf5f-40f1-a44f-af9db6daa11d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Labs\Implementations">
+      <UniqueIdentifier>{84f5619c-226b-4208-a7cd-696cbde94b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Labs\Abstracts">
+      <UniqueIdentifier>{fe0cac44-7e9d-4b4c-bff4-afc68a32c392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs">
+      <UniqueIdentifier>{9d4c5a07-1f06-4edb-bb3b-402c8ad2d081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Labs\Implementations\Lab2">
+      <UniqueIdentifier>{0816a650-ac5b-401c-920b-44fa298981fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Implementations">
+      <UniqueIdentifier>{cc32942b-0f69-462d-8c32-247607e98f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Labs\Implementations\Lab2">
+      <UniqueIdentifier>{73669a03-48f3-47dd-b30f-022f18a504cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Labs\LabFactory.h">
+      <Filter>Header Files\Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\Implementations\Lab1.h">
+      <Filter>Header Files\Labs\Implementations</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\Implementations\Lab2.h">
+      <Filter>Header Files\Labs\Implementations\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\Abstracts\Lab.h">
+      <Filter>Header Files\Labs\Abstracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\Implementations\Lab2\TrainSchedule.h">
+      <Filter>Header Files\Labs\Implementations\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\Implementations\Lab2\TrainScheduleManager.h">
+      <Filter>Header Files\Labs\Implementations\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Labs\Helpers\helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Labs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\LabFactory.cpp">
+      <Filter>Source Files\Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Labs\Implementations\Lab2\TrainScheduleManager.cpp">
+      <Filter>Source Files\Labs\Implementations\Lab2</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
