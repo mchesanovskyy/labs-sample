@@ -1,4 +1,4 @@
-#include <fstream>
+п»ї#include <fstream>
 #include <vector>
 #include <iomanip>
 #include "TrainScheduleManager.h"
@@ -90,9 +90,9 @@ void TrainScheduleManager::SaveToFile(vector<TrainSchedule*> schedules, bool app
 	}
 }
 
-// Цей запис "appendToFile ? ios::app : ios::in" є тринарною умовною операцією,
-// що є аналогом запису: if (condition) { if_true; } else { if_false; }
-// Більше тут: http://www.cplusplus.com/forum/articles/14631/ 
+// Р¦РµР№ Р·Р°РїРёСЃ "appendToFile ? ios::app : ios::in" С” С‚СЂРёРЅР°СЂРЅРѕСЋ СѓРјРѕРІРЅРѕСЋ РѕРїРµСЂР°С†С–С”СЋ,
+// С‰Рѕ С” Р°РЅР°Р»РѕРіРѕРј Р·Р°РїРёСЃСѓ: if (condition) { if_true; } else { if_false; }
+// Р‘С–Р»СЊС€Рµ С‚СѓС‚: http://www.cplusplus.com/forum/articles/14631/ 
 void TrainScheduleManager::SaveToFile(TrainSchedule& schedule, bool appendToFile) {
 	ofstream writer(FileName, appendToFile ? ios::app : ios::out);
 	if (writer.is_open()) {
@@ -160,8 +160,8 @@ string TrainScheduleManager::ReadSearchParameter(string label) {
 }
 
 bool TrainScheduleManager::IsMatch(string& arrivalStation, string& searchArrivalStation) {
-	// Якщо searchArrivalStation не вказано, то вважаємо,
-	// що всі станції відповідають шуканому результату
+	// РЇРєС‰Рѕ searchArrivalStation РЅРµ РІРєР°Р·Р°РЅРѕ, С‚Рѕ РІРІР°Р¶Р°С”РјРѕ,
+	// С‰Рѕ РІСЃС– СЃС‚Р°РЅС†С–С— РІС–РґРїРѕРІС–РґР°СЋС‚СЊ С€СѓРєР°РЅРѕРјСѓ СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
 	if (searchArrivalStation.empty()) return true;
 
 	return IsEqualsIgnoreCase(arrivalStation, searchArrivalStation);

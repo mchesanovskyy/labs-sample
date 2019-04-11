@@ -1,12 +1,12 @@
-#pragma once
+п»ї#pragma once
 #include <string>
 #include <vector>
 #include <sstream>
 
 using namespace std;
 
-// Цей мотод використовується для порівняння на рівність 
-// двох полів типу string ігноруючи регістр
+// Р¦РµР№ РјРѕС‚РѕРґ РІРёРєРѕСЂРёСЃС‚РѕРІСѓС”С‚СЊСЃСЏ РґР»СЏ РїРѕСЂС–РІРЅСЏРЅРЅСЏ РЅР° СЂС–РІРЅС–СЃС‚СЊ 
+// РґРІРѕС… РїРѕР»С–РІ С‚РёРїСѓ string С–РіРЅРѕСЂСѓСЋС‡Рё СЂРµРіС–СЃС‚СЂ
 inline bool IsEqualsIgnoreCase(const string& a, const string& b)
 {
 	return equal(a.begin(), a.end(), b.begin(), b.end(), [](char a, char b) { return tolower(a) == tolower(b); });

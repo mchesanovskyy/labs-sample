@@ -1,4 +1,4 @@
-#include "LabFactory.h"
+п»ї#include "LabFactory.h"
 
 LabFactory LabFactory::_instance;
 
@@ -24,16 +24,16 @@ void LabFactory::ClearLabs()
 Lab* LabFactory::GetLabByName(string labName) {
 	for (size_t i = 0; i < _labs.size(); ++i)
 	{
-		// Відбувається порівняння імен кожної ЛР з значенням поля labName.
-		// При порівнянні ігнорується регістр симолів.
+		// Р’С–РґР±СѓРІР°С”С‚СЊСЃСЏ РїРѕСЂС–РІРЅСЏРЅРЅСЏ С–РјРµРЅ РєРѕР¶РЅРѕС— Р›Р  Р· Р·РЅР°С‡РµРЅРЅСЏРј РїРѕР»СЏ labName.
+		// РџСЂРё РїРѕСЂС–РІРЅСЏРЅРЅС– С–РіРЅРѕСЂСѓС”С‚СЊСЃСЏ СЂРµРіС–СЃС‚СЂ СЃРёРјРѕР»С–РІ.
 		if (IsEqualsIgnoreCase(_labs.at(i)->GetName(), labName)) {
-			// Якщо лабораторну роботу знайдено, то відбувається відповідного
-			// екземпляру класу
+			// РЇРєС‰Рѕ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅСѓ СЂРѕР±РѕС‚Сѓ Р·РЅР°Р№РґРµРЅРѕ, С‚Рѕ РІС–РґР±СѓРІР°С”С‚СЊСЃСЏ РІС–РґРїРѕРІС–РґРЅРѕРіРѕ
+			// РµРєР·РµРјРїР»СЏСЂСѓ РєР»Р°СЃСѓ
 			return _labs.at(i);
 		}
 	}
-	// Якщо ЛР немає, згідно з значенням labName, то повертається nullptr
-	// Детальніше про nullptr: http://archive.kalnytskyi.com/2011/09/04/introduction-to-cpp11-part-2/
+	// РЇРєС‰Рѕ Р›Р  РЅРµРјР°С”, Р·РіС–РґРЅРѕ Р· Р·РЅР°С‡РµРЅРЅСЏРј labName, С‚Рѕ РїРѕРІРµСЂС‚Р°С”С‚СЊСЃСЏ nullptr
+	// Р”РµС‚Р°Р»СЊРЅС–С€Рµ РїСЂРѕ nullptr: http://archive.kalnytskyi.com/2011/09/04/introduction-to-cpp11-part-2/
 	return nullptr;
 }
 

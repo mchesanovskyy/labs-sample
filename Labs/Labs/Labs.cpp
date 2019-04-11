@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <iomanip>
 #include <locale>;
 #include "windows.h";
@@ -6,8 +6,8 @@
 
 using namespace std;
 
-// Виводить список доступних ЛР
-// Використано бібліотеку iomanip (left, right, setw) для форматування
+// Р’РёРІРѕРґРёС‚СЊ СЃРїРёСЃРѕРє РґРѕСЃС‚СѓРїРЅРёС… Р›Р 
+// Р’РёРєРѕСЂРёСЃС‚Р°РЅРѕ Р±С–Р±Р»С–РѕС‚РµРєСѓ iomanip (left, right, setw) РґР»СЏ С„РѕСЂРјР°С‚СѓРІР°РЅРЅСЏ
 // https://cpppatterns.com/patterns/write-data-in-columns.html
 void help() {
 	auto labs = LabFactory::GetInstance().GetLabs();
@@ -47,10 +47,10 @@ int main()
 		cout << "=> Please enter LR name: ";
 		string command;
 
-		// Далі використовується метод getline замість звичного 'cin >>'
-		// оскільки останній запис буде читати з консолі до першого пробілу,
-		// засіть того, щоб читати весь рядок.
-		// Детальніше: http://www.cplusplus.com/forum/beginner/213159/
+		// Р”Р°Р»С– РІРёРєРѕСЂРёСЃС‚РѕРІСѓС”С‚СЊСЃСЏ РјРµС‚РѕРґ getline Р·Р°РјС–СЃС‚СЊ Р·РІРёС‡РЅРѕРіРѕ 'cin >>'
+		// РѕСЃРєС–Р»СЊРєРё РѕСЃС‚Р°РЅРЅС–Р№ Р·Р°РїРёСЃ Р±СѓРґРµ С‡РёС‚Р°С‚Рё Р· РєРѕРЅСЃРѕР»С– РґРѕ РїРµСЂС€РѕРіРѕ РїСЂРѕР±С–Р»Сѓ,
+		// Р·Р°СЃС–С‚СЊ С‚РѕРіРѕ, С‰РѕР± С‡РёС‚Р°С‚Рё РІРµСЃСЊ СЂСЏРґРѕРє.
+		// Р”РµС‚Р°Р»СЊРЅС–С€Рµ: http://www.cplusplus.com/forum/beginner/213159/
 		getline(std::cin, command);
 		
 		if (IsEqualsIgnoreCase(command, "help")) {
@@ -58,14 +58,14 @@ int main()
 			continue;
 		}
 
-		Lab* selectedLab = LabFactory::GetInstance().GetLabByName(command); // знаходимо ЛР
+		Lab* selectedLab = LabFactory::GetInstance().GetLabByName(command); // Р·РЅР°С…РѕРґРёРјРѕ Р›Р 
 		
-		// перевіряємо чи знайдено ЛР
+		// РїРµСЂРµРІС–СЂСЏС”РјРѕ С‡Рё Р·РЅР°Р№РґРµРЅРѕ Р›Р 
 		if (selectedLab == nullptr) {
 			cout << "LR not found!" << endl;
 		}
 		else {
-			// Якщо знайдено - даємо на виконання
+			// РЇРєС‰Рѕ Р·РЅР°Р№РґРµРЅРѕ - РґР°С”РјРѕ РЅР° РІРёРєРѕРЅР°РЅРЅСЏ
 			selectedLab->Execute(); 
 		}
 	}

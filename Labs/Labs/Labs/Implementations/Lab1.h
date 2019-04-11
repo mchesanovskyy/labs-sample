@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include "../Abstracts/Lab.h"
 #include "../Helpers/helpers.h"
@@ -8,17 +8,17 @@ using namespace std;
 class Lab1 : public Lab
 {
 public:
-	// вказуємо назву для ЛР1
+	// РІРєР°Р·СѓС”РјРѕ РЅР°Р·РІСѓ РґР»СЏ Р›Р 1
 	virtual string GetName() {
 		return "lab 1";
 	}
 
-	// вказуємо опис для ЛР1
+	// РІРєР°Р·СѓС”РјРѕ РѕРїРёСЃ РґР»СЏ Р›Р 1
 	virtual string GetDescription() {
 		return "Check whether a phrase is palindrome or not";
 	}
 
-	// Задаємо реалізацію для ЛР1
+	// Р—Р°РґР°С”РјРѕ СЂРµР°Р»С–Р·Р°С†С–СЋ РґР»СЏ Р›Р 1
 	virtual void Execute() {
 		char extraSymbols[] = { ' ', ',', '!', '.', '?' };
 

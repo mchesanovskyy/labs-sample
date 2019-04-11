@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <string>
 
@@ -24,9 +24,9 @@ public:
 	void Search();
 
 private:
-	// appendToFile = true, має значення за замочуванням. 
-	// Це означає, що ми можемо не вказувати значення кожен раз 
-	// як викликаємо метод
+	// appendToFile = true, РјР°С” Р·РЅР°С‡РµРЅРЅСЏ Р·Р° Р·Р°РјРѕС‡СѓРІР°РЅРЅСЏРј. 
+	// Р¦Рµ РѕР·РЅР°С‡Р°С”, С‰Рѕ РјРё РјРѕР¶РµРјРѕ РЅРµ РІРєР°Р·СѓРІР°С‚Рё Р·РЅР°С‡РµРЅРЅСЏ РєРѕР¶РµРЅ СЂР°Р· 
+	// СЏРє РІРёРєР»РёРєР°С”РјРѕ РјРµС‚РѕРґ
 	void SaveToFile(vector<TrainSchedule*> schedules, bool appendToFile = true);
 
 	void SaveToFile(TrainSchedule& schedule, bool appendToFile = true);
