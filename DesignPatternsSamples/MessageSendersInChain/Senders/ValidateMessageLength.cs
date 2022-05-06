@@ -13,7 +13,7 @@ namespace MessageSendersInChain.Senders
                 throw new Exception("Message should be less than 100 chars");
             }
 
-            Console.WriteLine($"[Message valid according to {nameof(ValidateNullMessage)} rule]");
+            Console.WriteLine($"[Message valid according to {nameof(ValidateMessageLength)} rule]");
             base.Send(message);
         }
     }
